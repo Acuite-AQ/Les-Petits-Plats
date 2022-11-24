@@ -1,0 +1,112 @@
+.recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  &__card {
+    height: 365px;
+    max-width: 380px;
+    border-radius: $border-radius;
+  }
+
+  &__image {
+    border-radius: $border-radius-top;
+    background: $color-grey-dark;
+    height: 50%;
+  }
+
+  &__text {
+    border-radius: $border-radius-bottom;
+    background: $color-grey-light;
+    height: 50%;
+    padding: 20px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 17px;
+
+    & strong {
+      margin-left: 18px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__ingredients {
+    flex: 1 1 0;
+    font-size: 12px;
+    font-weight: 400;
+    max-height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    & strong {
+      font-weight: 700;
+    }
+  }
+
+  &__instructions {
+    flex: 1 1 0;
+    font-family: $font-family-secondary;
+    font-size: 12px;
+    font-weight: 400;
+    max-height: 97px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.no-recipe {
+  &__card {
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 1px;
+  }
+
+  &__infobox {
+    font-size: 25px;
+
+    & span {
+      display: inline-block;
+    }
+  }
+}
+
+//@media screen and (max-width: $screen-large) {
+//  .recipe {
+//    grid-template-columns: 1fr 1fr;
+//  }
+//}
+//
+//@media screen and (max-width: $screen-medium) {
+//  .recipe {
+//    grid-template-columns: 1fr;
+//  }
+//}

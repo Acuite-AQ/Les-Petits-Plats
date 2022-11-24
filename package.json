@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "name": "les-petits-plats",
+  "version": "1.0.0",
+  "description": "Projet 7 OC",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Allan D",
+  "license": "ISC"
+}
